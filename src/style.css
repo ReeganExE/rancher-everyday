@@ -1,0 +1,71 @@
+.search-box {
+  position: fixed;
+  top: 100px;
+  z-index: 200;
+  left: 28%;
+}
+
+.highlight {
+  color: #77216F;
+  font-weight: bold;
+}
+
+
+.ports a {
+  margin: 10px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .search-box {
+    width: 560px;
+  }
+
+  .ports a {
+    margin: 5px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .search-box {
+    width: 650px!important;
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .search-box {
+    width: 800px!important;
+  }
+}
+
+
+.search-box > div {
+  box-shadow: rgba(0, 0, 0, 0.29) 0px 4px 20px 6px!important;
+}
+
+.ports {
+  float: right;
+  margin-left: 12px;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+/* .selected .ports a {
+  color: white;
+}
+
+.selected .ports a:hover {
+  color: #79ffb7;
+} */
+
+.selected {}
+
+input::-webkit-input-placeholder{
+  color:#9e9e9e;
+  font-style: italic;
+}
